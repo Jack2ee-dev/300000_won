@@ -1,0 +1,112 @@
+  body * {
+      color: #fff;
+      text-align: center;
+  }
+
+  .header_wrapper {
+      display: flex;
+      height: 5vh;
+  }
+
+  .header {
+      background-color: navy;
+      width: 20%;
+  }
+
+  .menu {
+      background-color: red;
+      width: 80%;
+  }
+
+  .hero {
+      background-color: skyblue;
+      height: 20vh;
+  }
+
+  .main_wrapper {
+      display: flex;
+      height: 15vh;
+  }
+
+  .main {
+      background-color: navy;
+      width: 50%;
+  }
+
+  .empty {
+      width: 25%;
+  }
+
+  .image_wrapper {
+      height: 15vh;
+      width: 25%;
+  }
+
+  .image {
+      background-color: #43ffd3;
+      height: 50%;
+    }
+    
+    .extra {
+        background-color: #00dca8;
+        height: 50%;
+  }
+
+  .banner {
+      background-color: yellow;
+      height: 10vh;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .header {
+        width: 100%;
+    }
+
+    .menu {
+        position: absolute;
+        height: 25vh;
+        width: 20%;
+        top: 25.8%;
+    }
+
+    .main {
+        position: absolute;
+        height: 12.5vh;
+        right: 1%;
+        width: 79%;
+        z-index: -1;
+    }
+
+    .empty {
+        display: none;
+    }
+
+    .image_wrapper {
+        display: flex;
+        position: absolute;
+        height: 6.25vh;
+        bottom: 49.2%;
+        right: 1%;
+        width: 79%;
+        z-index: -1;
+    }
+
+    .extra {
+        width: 80%;
+        height: 100%;
+        order: -1;
+    }
+    .image {
+        width: 20%;
+        height: 100%;
+    }
+
+    .banner {
+        position: absolute;
+        width: 79%;
+        right: 1%;
+        z-index: -1;
+        top: 38%;
+        height: 6.25vh;
+    }
+  }
