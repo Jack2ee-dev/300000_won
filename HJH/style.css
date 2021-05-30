@@ -1,0 +1,64 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 75px);
+  grid-template-areas:
+    'header menu menu menu'
+    'hero hero hero hero'
+    'hero hero hero hero'
+    'main main . image'
+    'main main . extra'
+    'banner banner banner banner'
+    'banner banner banner banner';
+  color: #fff;
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  background-color: navy;
+}
+
+.menu {
+  grid-area: menu;
+  background-color: red;
+}
+
+.hero {
+  grid-area: hero;
+  background-color: skyblue;
+}
+
+.main {
+  grid-area: main;
+  background-color: navy;
+}
+
+.image {
+  grid-area: image;
+  background-color: #43ffd3;
+}
+
+.extra {
+  grid-area: extra;
+  background-color: #00dca8;
+}
+
+.banner {
+  grid-area: banner;
+  background-color: yellow;
+}
+
+@media screen and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 75px);
+    grid-template-areas:
+      'header header header header'
+      'hero hero hero hero'
+      'hero hero hero hero'
+      'menu main main main'
+      'menu banner banner banner'
+      'menu extra extra image';
+  }
+}
